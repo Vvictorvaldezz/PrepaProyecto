@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Ver Datos Centro de Trabajo</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -29,23 +29,48 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-black navbar-black"> 
             <div class="container-fluid">
-                <a href="#" class="navbar-brand">Formando <span>Profesionales</span></a>
+              <a href="#" class="navbar-brand">Formando <span>Profesionales</span></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                                         
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>                        
                         <div class="nav-item dropdown">                          
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Escuela</a> 
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Docente</a> 
+
                             <div class="dropdown-menu">
-                                <a href="verEscuela.html" class="dropdown-item">Ver datos</a>
-                                <a href="escuela.html" class="dropdown-item">Agregar datos</a>                                
+                              <a href="docente.html" class="dropdown-item">Datos docente</a> 
+                              <a href="DatosDocente-DomicilioDocente.html" class="dropdown-item">Domicilio del docente</a> 
+                              <a href="DatosDocente-Licenciatura.html" class="dropdown-item">Licenciatura del docente</a>
+                              <a href="DatosDocente-Especializacion.html" class="dropdown-item">Especialización del docente</a>
+                              <a href="DatosDocente-Diplomado.html" class="dropdown-item">Diplomado del docente</a>
+                              <a href="DatosDocente-Maestria.html" class="dropdown-item">Maestría del docente</a> 
+                              <a href="DatosDocente-Doctorado.html" class="dropdown-item">Doctorado del docente</a> 
+                              <a href="DatosDocente-EscuelaLabora.html" class="dropdown-item">Escuela donde labora el docente</a>
+                              <a href="DatosDocente-Documentos.html" class="dropdown-item">Documentos del docente</a> 
+                              
+                           <!--   <a href="DatosDocente-EscuelasNumeros.html" class="dropdown-item">Números de escuela del docente</a> -->
+                            
+                          </div>                     
+                        </div>                       
+                        <div class="nav-item dropdown">                          
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Centro de Trabajo</a> 
+                            <div class="dropdown-menu">
+                                <a href="escuela.html" class="dropdown-item">Agregar datos</a> 
+                                <a href="verEscuela.html" class="dropdown-item">Ver datos</a>              
                             </div>
-                        </div>
-                       
+                        </div>   
+                        <div class="nav-item dropdown">                          
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ver información del docente</a> 
+                          <div class="dropdown-menu">
+                              <a href="VerDatosDocente.html" class="dropdown-item">Datos del Docente</a>
+                                                 
+                          </div>
+                      </div>   
+
                     </div>
                 </div>
             </div>
@@ -73,13 +98,15 @@
                       <thead>
                         <tr>
                           <th scope="col">Nombre de la escuela</th>
+                          <th scope="col">CCT</th>
                           <th scope="col">Turno</th>
+                          <th scope="col">Calle</th>
+                          <th scope="col">Número</th>
+                          <th scope="col">Colonia</th>
                           <th scope="col">Localidad</th>                          
                           <th scope="col">Municipio</th>
-                          <th scope="col">Calle de la escuela</th>
-                          <th scope="col">No. de la escuela</th>
                           <th scope="col">Colonia</th>
-                          <th scope="col">Codigo postal</th>
+                          <th scope="col">Código postal</th>
                           <th scope="col">Telefono escuela</th>
                           <th scope="col">Editar</th>
                           <th scope="col">Eliminar</th>                        
