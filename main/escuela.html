@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Escuela</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -28,30 +28,52 @@
     <body>
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-black navbar-black"> 
-            <div class="container-fluid">
-              <a href="#" class="navbar-brand">Formando <span>Profesionales</span></a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">Formando <span>Profesionales</span></a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
 
-                    <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a> 
-                            
-                        </div>                       
-                        <div class="nav-item dropdown">                          
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Escuela</a> 
-                            <div class="dropdown-menu">
-                                <a href="verEscuela.html" class="dropdown-item">Ver datos</a>
-                                <a href="escuela.html" class="dropdown-item">Agregar datos</a>                                
-                            </div>
-                        </div>   
+                  <div class="navbar-nav ml-auto">
+                      <a href="index.html" class="nav-item nav-link active">Inicio</a>                        
+                      <div class="nav-item dropdown">                          
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Docente</a> 
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                          <div class="dropdown-menu">
+                            <a href="docente.html" class="dropdown-item">Datos docente</a> 
+                            <a href="DatosDocente-Diplomado.html" class="dropdown-item">Diplomado del docente</a>
+                            <a href="DatosDocente-Doctorado.html" class="dropdown-item">Doctorado del docente</a> 
+                            <a href="DatosDocente-Documentos.html" class="dropdown-item">Documentos del docente</a> 
+                            <a href="DatosDocente-DomicilioDocente.html" class="dropdown-item">Domicilio del docente</a> 
+                            <a href="DatosDocente-EscuelaLabora.html" class="dropdown-item">Escuela donde labora el docente</a> 
+                         <!--   <a href="DatosDocente-EscuelasNumeros.html" class="dropdown-item">Números de escuela del docente</a> -->
+                            <a href="DatosDocente-Especializacion.html" class="dropdown-item">Especialización del docente</a> 
+                            <a href="DatosDocente-Licenciatura.html" class="dropdown-item">Licenciatura del docente</a> 
+                            <a href="DatosDocente-Maestria.html" class="dropdown-item">Maestría del docente</a> 
+                              
+                          </div>                     
+                      </div>                       
+                      <div class="nav-item dropdown">                          
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Centro de Trabajo</a> 
+                          <div class="dropdown-menu">
+                            <a href="escuela.html" class="dropdown-item">Agregar datos</a> 
+                            <a href="verEscuela.html" class="dropdown-item">Ver datos</a>                                
+                          </div>
+                      </div>   
+                      <div class="nav-item dropdown">                          
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ver información del docente</a> 
+                        <div class="dropdown-menu">
+                            <a href="VerDatosDocente.html" class="dropdown-item">Datos del Docente</a>
+                                               
+                        </div>
+                    </div>   
+
+                  </div>
+              </div>
+          </div>
+      </div>
         <!-- Nav Bar End -->
 
 
@@ -85,18 +107,7 @@
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Localidad</label>
-                                <input type="text" class="form-control" id="idLocalidad" placeholder="">
-                              </div><br>
-
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Municipio</label>
-                                <input type="text" class="form-control" id="idMunicipio" placeholder="">
-                              </div><br>
-
-
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">calle de la escuela</label>
+                                <label for="exampleFormControlInput1">Calle de la escuela</label>
                                 <input type="text" class="form-control" id="calleEscuela" placeholder="">
                               </div><br>
 
@@ -111,25 +122,31 @@
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Codido postal</label>
+                                <label for="exampleFormControlInput1">Localidad</label>
+                                <input type="text" class="form-control" id="idLocalidad" placeholder="">
+                              </div><br>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Municipio</label>
+                                <input type="text" class="form-control" id="idMunicipio" placeholder="">
+                              </div><br>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Código postal</label>
                                 <input type="number" class="form-control" id="CPEscuela" placeholder="">
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Telefono escuela</label>
+                                <label for="exampleFormControlInput1">Teléfono escuela</label>
                                 <input type="number" class="form-control" id="telefonoEscuela" placeholder="">
                               </div><br>
 
 
-
                             </form>
 
-                            <form>
-                              <div class="form-group">
-                                <label for="exampleFormControlFile1"></label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                              </div>
-                            </form>
+                            <p class="text-center">
+                              <button href="#!" class="btn btn-warning " style="color: rgb(0, 0, 0); font-size: 100%;"><i class="zmdi zmdi-floppy zmdi-hc-fw"></i>GUARDAR DATOS</button>
+                            </p>
 
                               <script>
                               // Example starter JavaScript for disabling form submissions if there are invalid fields
