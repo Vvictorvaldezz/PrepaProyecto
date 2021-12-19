@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Ver Datos Alumno</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -38,20 +38,15 @@
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                   
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Alumno</a> 
+                        <div class="nav-item dropdown">                          
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Datos Alumno</a> 
                             <div class="dropdown-menu">
-                                <a href="semestre1.html" class="dropdown-item">Semestre 1</a>
-                                <a href="semestre1.html" class="dropdown-item">Semestre 2</a>
-                                <a href="semestre1.html" class="dropdown-item">Semestre 3</a>
-                                <a href="semestre1.html" class="dropdown-item">Semestre 4</a>
-                                <a href="semestre1.html" class="dropdown-item">Semestre 5</a>
-                                <a href="semestre1.html" class="dropdown-item">Semestre 6</a>
-                                
+                                <a href="form.html" class="dropdown-item">Agregar Datos Alumno</a>
+                                <a href="verAlumnno.html" class="dropdown-item">Ver Datos Alumno</a>                                
                             </div>
-                        </div>                        
-                        
+                        </div>
                   
+                       
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Semestre</a> 
                             <div class="dropdown-menu">
@@ -64,31 +59,27 @@
                                 
                             </div>
                         </div>
-                         
-                                            
-                        <div class="nav-item dropdown">                          
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Padre</a> 
-                            <div class="dropdown-menu">
-                                <a href="verPadre.html" class="dropdown-item">Ver datos</a>
-                                <a href="padre.html" class="dropdown-item">Agregar datos</a>                                
-                            </div>                            
-                        </div>   
 
+                        <div class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ver Semestre</a> 
+                          <div class="dropdown-menu">
+                              <a href="semestre1.html" class="dropdown-item">Semestre 1</a>
+                              <a href="semestre1.html" class="dropdown-item">Semestre 2</a>
+                              <a href="semestre1.html" class="dropdown-item">Semestre 3</a>
+                              <a href="semestre1.html" class="dropdown-item">Semestre 4</a>
+                              <a href="semestre1.html" class="dropdown-item">Semestre 5</a>
+                              <a href="semestre1.html" class="dropdown-item">Semestre 6</a>
+                              
+                          </div>
+                      </div>  
+                         
                         <div class="nav-item dropdown">                          
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Madre</a> 
-                            <div class="dropdown-menu">
-                                <a href="verMadre.html" class="dropdown-item">Ver datos</a>
-                                <a href="madre.html" class="dropdown-item">Agregar datos</a>                                
-                            </div>                            
-                        </div>
-                                            
-                        <div class="nav-item dropdown">                          
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Escuela</a> 
-                            <div class="dropdown-menu">
-                                <a href="verEscuela.html" class="dropdown-item">Ver datos</a>
-                                <a href="escuela.html" class="dropdown-item">Agregar datos</a>                                
-                            </div>
-                        </div>
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Datos Padre/Madre</a> 
+                          <div class="dropdown-menu">
+                              <a href="verPadre.html" class="dropdown-item">Ver datos Padre</a>
+                              <a href="verMadre.html" class="dropdown-item">Ver datos Madre</a>                              
+                          </div>                            
+                      </div>  
 
 
                     </div>
@@ -117,76 +108,54 @@
                      <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th scope="col">Nombre</th>
-                          <th scope="col">Apellido materno</th>
-                          <th scope="col">Apellido paterno</th>
-                          <th scope="col">Fecha  baja</th>
+                          <th scope="col">Matrícula</th>
+                          <th scope="col">Fecha de Inscripción</th>
+                          <th scope="col">Fecha de Baja</th>
                           <th scope="col">No. Expediente</th>
-                          <th scope="col">Folio alumno</th>
-                          <th scope="col">Curp alumno</th>
-                          <th scope="col">Fecha de nacimineto</th>
-                          <th scope="col">Correo personal</th>
-                          <th scope="col">Correo institucional</th>
-                          <th scope="col">Referencias del domicilio</th>
-                          <th scope="col">Telefono fijo</th>
-                          <th scope="col">Telefono celular</th>
-                          <th scope="col">No. seguro social</th>
-                          <th scope="col">Folio beca</th>
-                          <th scope="col">No. Aciertos de examen de ingreso</th>
-                          <th scope="col">Promedio secundaria</th>
-                          <th scope="col">Nombre tutor</th>
+                          <th scope="col">Folio Alumno</th>
+                          <th scope="col">Apellido Paterno</th>
+                          <th scope="col">Apellido Materno</th>
+                          <th scope="col">Nombre(s)</th>
+                          <th scope="col">CURP Alumno</th>
+                          <th scope="col">Folio CURP del Alumno</th>
+                          <th scope="col">RFC del Alumno</th>
                           <th scope="col">Sexo</th>
+                          <th scope="col">Lugar de Nacimiento</th>
+                          <th scope="col">Entidad Federativa</th>
+                          <th scope="col">Fecha de Nacimiento</th>
                           <th scope="col">Edad</th>
-                          <th scope="col">Grupo</th>
+                          <th scope="col">Correo Personal</th>
+                          <th scope="col">Correo Institucional</th>
                           <th scope="col">Grado</th>
+                          <th scope="col">Grupo</th>
+                          <th scope="col">Calle</th>
+                          <th scope="col">Número</th>
+                          <th scope="col">Localidad</th>
+                          <th scope="col">Municipio</th>
+                          <th scope="col">Código Postal</th>
+                          <th scope="col">Referencia de Domicilio</th>
+                          <th scope="col">Entre Calle</th>
+                          <th scope="col">Y Calle</th>
+                          <th scope="col">Telefono Celular</th>
+                          <th scope="col">Telefono Fijo</th>
                           <th scope="col">El alumno trabaja</th>
-                          <th scope="col">seguro social</th>
-                          <th scope="col">El alumno esta inscrito</th>
+                          <th scope="col">Tipo Seguro Social</th>
+                          <th scope="col">No. seguro Social</th>
+                          <th scope="col">El Alumno esta Inscrito</th>
                           <th scope="col">Beca</th>
-                          <th scope="col">Entidad federativa</th>
-                          <th scope="col">CCT de la escuela</th>
-                          <th scope="col">Ocupacion</th>
-                          <th scope="col">Folio curp del alumno</th>
-                          <th scope="col">RFC del alumno</th>
-                          <th scope="col">Municipio de nacimiento</th>
+                          <th scope="col">Folio Beca</th>
+                          <th scope="col">No. Aciertos de examen de ingreso</th>
+                          <th scope="col">Secundaria de Procedencia</th>
+                          <th scope="col">CCT Secundaria</th>
+                          <th scope="col">Población Secundaria</th>
+                          <th scope="col">Promedio secundaria</th>
+                          <th scope="col">Nombre Tutor</th>
+                          <th scope="col">De quien Depende Económicamente el Alumno</th>
+                          <th scope="col">Ocupación de quien Depende Económicamnete el Alumno</th>
                           <th scope="col">Editar</th>
                           <th scope="col">Eliminar</th>   
                                                
                         </tr>
-                        
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td> 
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td> 
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>  
-                        <td></td>       
-                        
                         <td><a href="#"><i class='fas fa-edit'></i></a></td>
                         <td><a href="#"><i class='fas fa-trash-alt'></i></a></td> 
                       </thead>
