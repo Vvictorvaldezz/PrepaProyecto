@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Agregar semestre 5</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -39,20 +39,15 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         
                   
-                        <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Alumno</a> 
+                        <div class="nav-item dropdown">                          
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Datos Alumno</a> 
                           <div class="dropdown-menu">
-                              <a href="semestre1.html" class="dropdown-item">Semestre 1</a>
-                              <a href="semestre1.html" class="dropdown-item">Semestre 2</a>
-                              <a href="semestre1.html" class="dropdown-item">Semestre 3</a>
-                              <a href="semestre1.html" class="dropdown-item">Semestre 4</a>
-                              <a href="semestre1.html" class="dropdown-item">Semestre 5</a>
-                              <a href="semestre1.html" class="dropdown-item">Semestre 6</a>
-                              
+                              <a href="form.html" class="dropdown-item">Agregar Datos Alumno</a>
+                              <a href="verAlumnno.html" class="dropdown-item">Ver Datos Alumno</a>                                
                           </div>
-                      </div>                        
-                      
+                      </div>
                 
+                     
                       <div class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Semestre</a> 
                           <div class="dropdown-menu">
@@ -65,31 +60,27 @@
                               
                           </div>
                       </div>
-                       
-                                          
-                      <div class="nav-item dropdown">                          
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Padre</a> 
-                          <div class="dropdown-menu">
-                              <a href="verPadre.html" class="dropdown-item">Ver datos</a>
-                              <a href="padre.html" class="dropdown-item">Agregar datos</a>                                
-                          </div>                            
-                      </div>   
 
+                      <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ver Semestre</a> 
+                        <div class="dropdown-menu">
+                            <a href="semestre1.html" class="dropdown-item">Semestre 1</a>
+                            <a href="semestre1.html" class="dropdown-item">Semestre 2</a>
+                            <a href="semestre1.html" class="dropdown-item">Semestre 3</a>
+                            <a href="semestre1.html" class="dropdown-item">Semestre 4</a>
+                            <a href="semestre1.html" class="dropdown-item">Semestre 5</a>
+                            <a href="semestre1.html" class="dropdown-item">Semestre 6</a>
+                            
+                        </div>
+                    </div>  
+                       
                       <div class="nav-item dropdown">                          
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Madre</a> 
-                          <div class="dropdown-menu">
-                              <a href="verMadre.html" class="dropdown-item">Ver datos</a>
-                              <a href="madre.html" class="dropdown-item">Agregar datos</a>                                
-                          </div>                            
-                      </div>
-                                          
-                      <div class="nav-item dropdown">                          
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Escuela</a> 
-                          <div class="dropdown-menu">
-                              <a href="verEscuela.html" class="dropdown-item">Ver datos</a>
-                              <a href="escuela.html" class="dropdown-item">Agregar datos</a>                                
-                          </div>
-                      </div>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Datos Padre/Madre</a> 
+                        <div class="dropdown-menu">
+                            <a href="verPadre.html" class="dropdown-item">Ver datos Padre</a>
+                            <a href="verMadre.html" class="dropdown-item">Ver datos Madre</a>                              
+                        </div>                            
+                    </div>  
 
                     </div>
                 </div>
@@ -111,10 +102,15 @@
                                 <p>.</p>
                                 <h2>Datos del alumno</h2> 
                             </div><form>
+                              <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>DATOS</a></li>
+                              </ul>
+
                               <div class="form-group">
                                 <label for="exampleFormControlInput1">Matricula</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Matricula">
+                                <input type="text" class="form-control" id="matricula" placeholder="Ingresa Matricula">
                               </div>
+
                               <div class="form-group">
                                 <label for="exampleFormControlInput1">Selecciona Materia</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
@@ -133,74 +129,89 @@
                       
                                 </select>
                               </div>
-                              
-                                </select>
-                              </div>
+                              <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>FALTAS</a></li>
+                              </ul>
+
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">falta1ro</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Faltas">
+                                <label for="exampleFormControlInput1">Falta 1ro</label>
+                                <input type="number" class="form-control" id="falta1ro" placeholder="Ingresa Faltas">
                               </div>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">falta2do</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Faltas">
+                                <label for="exampleFormControlInput1">Falta 2do</label>
+                                <input type="number" class="form-control" id="falta2do" placeholder="Ingresa Faltas">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">falta3ero</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Faltas">
+                                <label for="exampleFormControlInput1">Falta 3ero</label>
+                                <input type="number" class="form-control" id="falta3ero" placeholder="Ingresa Faltas">
+                              </div>
+
+                              <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>CALIFICACIONES</a></li>
+                              </ul>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Parcial 1ro</label>
+                                <input type="text" class="form-control" id="calParcial1ro" placeholder="Ingresa Calificacion">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calParcial1ro</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Calificacion">
+                                <label for="exampleFormControlInput1">Parcial 2do</label>
+                                <input type="text" class="form-control" id="calParcial2do" placeholder="Ingresa Calificacion">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calParcial2do</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Calificacion">
+                                <label for="exampleFormControlInput1">Parcial 3ero</label>
+                                <input type="text" class="form-control" id="calParcial3ero" placeholder="Ingresa Calificacion">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calParcial3ero</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa Calificacion">
+                                <label for="exampleFormControlInput1">Calificacion Final</label>
+                                <input type="text" class="form-control" id="calFinal" placeholder="Ingresa calFinal">
+                              </div>
+
+                              <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>CALIFICACIONES EXTRAORDINARIAS</a></li>
+                              </ul>
+
+                              <div class="form-group">
+                                <label for="exampleFormControlInput1">Calificación Extra1</label>
+                                <input type="text" class="form-control" id="calExtra1" placeholder="Ingresa calfExtra1">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calExtra1</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa calfExtra1">
+                                <label for="exampleFormControlInput1">Fecha Calificación Extra1</label>
+                                <input type="date" class="form-control" id="fechaCalExtra1" placeholder="Ingresa fechaCalExtra1">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">fechaCalExtra1</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa fechaCalExtra1">
+                                <label for="exampleFormControlInput1">Calificación Extra2</label>
+                                <input type="text" class="form-control" id="calExtra2" placeholder="Ingresa fechaCalExtra1">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calExtra2</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa fechaCalExtra1">
+                                <label for="exampleFormControlInput1">Fecha Calificación Extra2</label>
+                                <input type="date" class="form-control" id="fechaCalExtra2" placeholder="Ingresa fechaCalExtra2">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">fechaCalExtra2</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa fechaCalExtra2">
+                                <label for="exampleFormControlInput1">Calificación Extra3</label>
+                                <input type="text" class="form-control" id="calExtra3" placeholder="Ingresa calfExtra3">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calExtra3</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa calfExtra3">
+                                <label for="exampleFormControlInput1">Fecha Calificación Extra3</label>
+                                <input type="date" class="form-control" id="fechaCalExtra3" placeholder="Ingresa fechaCalExtra3">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">fechaCalExtra3</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa fechaCalExtra3">
+                                <label for="exampleFormControlInput1">Calificación Extra4</label>
+                                <input type="text" class="form-control" id="calExtra4" placeholder="Ingresa calExtra4">
                               </div>
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">calExtra4</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa calExtra4">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">fechaCalExtra4</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa fechaCalExtra4">
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">calFinal</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa calFinal">
+                                <label for="exampleFormControlInput1">Fecha Calificación Extra4</label>
+                                <input type="date" class="form-control" id="fechaCalExtra4" placeholder="Ingresa fechaCalExtra4">
                               </div>
 
                             </form>
 
-                            <form>
+                            <p class="text-center">
+                              <button href="#!" class="btn btn-warning " style="color: rgb(0, 0, 0); font-size: 100%;"><i class="zmdi zmdi-floppy zmdi-hc-fw"></i>GUARDAR DATOS</button>
+                            </p>
+
+                            <!---<form>
                               <div class="form-group">
                                 <input type="submit" value="Editar" />
                               </div>
@@ -216,7 +227,7 @@
                               <div class="form-group">
                                 <input type="submit" value="Eliminar" />
                               </div>
-                            </form>
+                            </form>-->
 
                               <script>
                               // Example starter JavaScript for disabling form submissions if there are invalid fields
