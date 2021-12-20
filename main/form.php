@@ -411,7 +411,7 @@
                                   $resultado = mysqli_query($conexion,$sentencia);
                                   while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
                                     echo "
-					                          <option value='".$regSeguroSocial['id']."'>".$regSeguroSocial["nombre"]."".$regSeguroSocial["codigo_postal"]."</option>
+					                          <option value='".$regSeguroSocial['id']."'>".$regSeguroSocial["nombre"].".    C.P".$regSeguroSocial["codigo_postal"]."</option>
 					                          ";
                                   }
                                 ?>
