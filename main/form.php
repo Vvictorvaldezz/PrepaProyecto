@@ -317,16 +317,40 @@
                               <div class="form-group">
                                 <label for="exampleFormControlInput1">Nombre del Tutor</label>
                                 <input type="text" class="form-control" id="nombreTutor" placeholder="">
+                              </div><br>                             
+
+                              <div class="form-group">
+                              <label for="exampleFormControlInput1">De quien Depende Económicamente el Alumno</label>                              
+                                <select class="form-control" name="cmbDependeEconomicamente" id="idDependeEconomicamente">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  parentesco";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idParentesco']."'>".$regSeguroSocial["parentesco"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">De quien Depende Económicamente el Alumno</label>
-                                <input type="text" class="form-control" id="dependeEconomicamente" placeholder="">
-                              </div><br>
-
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Ocupación de quien Depende Económicamente el Alumno</label>
-                                <input type="text" class="form-control" id="OcupacionDependeEconomicamente" placeholder="">
+                              <label for="exampleFormControlInput1">Ocupación de quien Depende Económicamente el Alumno</label>                            
+                                <select class="form-control" name="cmbOcupacionDependeEconomicamente" id="idOcupacionDependeEconomicamente">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  ocupacion";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idOcupacion']."'>".$regSeguroSocial["ocupacion"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
                               </div><br>
 
                               <ul class="nav nav-tabs" style="margin-bottom: 15px;">
@@ -393,14 +417,7 @@
                                 ?>
                                 </select>
                               </div><br>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Localidad</label>
-                                <input type="text" class="form-control" id="localidad" placeholder="">
-                              </div><br>
-
-                              
-
-                              
+                            
 
                               <ul class="nav nav-tabs" style="margin-bottom: 15px;">
                                 <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>REFERENCIA DOMICILIO</a></li>
@@ -449,6 +466,20 @@
                                 <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>PADRE</a></li>
                               </ul>
 
+                              <div class="form-group">                              
+                                <select class="form-control" name="cmbParentescoPadre" id="idParentescoPadre">                                  
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  parentesco WHERE idParentesco = 2";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idParentesco']."'>".$regSeguroSocial["parentesco"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
+                              </div><br>
                               <div class="form-group">
                                 <label for="exampleFormControlInput1">Nombre</label>
                                 <input type="text" class="form-control" id="nombrePadre" placeholder="">
@@ -465,13 +496,25 @@
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Nivel escolar</label>
-                                <input type="text" class="form-control" id="idNivelEscolar" placeholder="">
+                                <label for="exampleFormControlInput1">Grado de Estudio</label>
+                                <input type="text" class="form-control" id="idGradoEstudioPadre" placeholder="">
                               </div><br>
                               
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Ocupacion</label>
-                                <input type="text" class="form-control" id="idOcupacion" placeholder="">
+                                <label for="exampleFormControlInput1">Ocupacion</label>                                
+                                <select class="form-control" name="cmbOcupacionPadre" id="idOcupacionPadre">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  ocupacion";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idOcupacion']."'>".$regSeguroSocial["ocupacion"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
                               </div><br>
 
                               <div class="form-group">
@@ -493,6 +536,20 @@
                                 <li class="active"><a href="" data-toggle="tab"><i class="zmdi zmdi-female zmdi-hc-fw"></i>MADRE</a></li>
                               </ul>
 
+                              <div class="form-group">                              
+                                <select class="form-control" name="cmbParentescoMadre" id="idParentescoMadre">           
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  parentesco WHERE idParentesco = 1";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idParentesco']."'>".$regSeguroSocial["parentesco"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
+                              </div><br>
                               <div class="form-group">
                                 <label for="exampleFormControlInput1">Nombre</label>
                                 <input type="text" class="form-control" id="nombreMadre" placeholder="">
@@ -509,13 +566,25 @@
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Nivel escolar</label>
-                                <input type="text" class="form-control" id="idNivelEscolar" placeholder="">
+                                <label for="exampleFormControlInput1">Grado de Estudio</label>
+                                <input type="text" class="form-control" id="idGradoEstudioMadre" placeholder="">
                               </div><br>
                               
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Ocupacion</label>
-                                <input type="text" class="form-control" id="idOcupacion" placeholder="">
+                                <label for="exampleFormControlInput1">Ocupacion</label>                                
+                                <select class="form-control" name="cmbOcupacionMadre" id="idOcupacionMadre">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  ocupacion";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['idOcupacion']."'>".$regSeguroSocial["ocupacion"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
                               </div><br>
 
                               <div class="form-group">
