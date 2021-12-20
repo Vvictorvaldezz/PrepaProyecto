@@ -98,33 +98,62 @@
                               </div>
                             </form>
                             
-                            <form>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Número</label>
-                                <input type="text" class="form-control" id="numero">
-                              </div>
-                            </form>
+                            <form action="" method="POST">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Estado </label>                                
+                                <select class="form-control" name="cmbEstado" id="idEstado">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  estado";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['id']."'>".$regSeguroSocial["nombre"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
+                              </div><br>
+                              </form>
 
-                            <form>
+                              <form action="" method="POST">
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Localidad</label>
-                                <input type="text" class="form-control" id="localidad">
-                              </div>
-                            </form>
+                                <label for="exampleFormControlInput1">Municipio</label>                                
+                                <select class="form-control" name="cmbMunicipio" id="idMunicipio">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM  municipio WHERE estado = 15";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['id']."'>".$regSeguroSocial["nombre"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
+                              </div><br>
+                              </form>
 
-                            <form>
+                              <form action="" method="POST">
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Municipio</label>
-                                <input type="text" class="form-control" id="municipio">
-                              </div>
-                            </form>
-
-                            <form>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Código Postal</label>
-                                <input type="text" class="form-control" id="codigoPostal">
-                              </div>
-                            </form>
+                                <label for="exampleFormControlInput1">Localidad</label>                                
+                                <select class="form-control" name="cmbLocalidad" id="idLocalidad">
+                                  <option>--Seleccione una opcion--</option>
+                                  <?php
+                                  include("../funciones/conexion.php");
+                                  $sentencia = "SELECT * FROM localidad WHERE municipio = 15026";
+                                  $resultado = mysqli_query($conexion,$sentencia);
+                                  while($regSeguroSocial = mysqli_fetch_assoc($resultado)){
+                                    echo "
+					                          <option value='".$regSeguroSocial['id']."'>".$regSeguroSocial["nombre"]."".$regSeguroSocial["codigo_postal"]."</option>
+					                          ";
+                                  }
+                                ?>
+                                </select>
+                              </div><br>
+                              </form>
 
                             <!--<form>
                               <div class="form-group">
