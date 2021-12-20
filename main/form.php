@@ -368,7 +368,7 @@
                               </div><br>
 
                               <div class="form-group">
-                                <label for="exampleFormControlInput1">Estado</label>                                
+                                <label for="exampleFormControlInput1">Estado </label>                                
                                 <select class="form-control" name="cmbEstado" id="idEstado">
                                   <option>--Seleccione una opcion--</option>
                                   <?php
